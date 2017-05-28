@@ -1,0 +1,10 @@
+﻿ships: child
+username: child_admin
+password: password_child
+tasks:
+  - name: list services
+    module: service.listsrv
+    args: name=spooler action=restart
+  - name: stop service
+    module: service.listsrv
+    args: name=spooler action=stop

@@ -1,0 +1,17 @@
+﻿---
+- name: common
+  hosts:
+    - 192.168.40.228
+    - 192.168.40.226
+---
+- name: child
+  parent: common
+  hosts:
+    - web.iis.shmiis
+    - secondhost
+---
+- name: very child
+  parent: child
+  hosts:
+    - web.iis.shmiis11
+    - secondhost11

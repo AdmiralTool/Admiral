@@ -1,0 +1,10 @@
+﻿ships: common
+username: common_admin
+password: password_common
+tasks:
+  - name: list services
+    module: service.listsrv
+    args: name=spooler1 action='we have spaces, so whut'
+  - name: stop service
+    module: service.stopsrv
+    args: name='wot m8' action=stop
