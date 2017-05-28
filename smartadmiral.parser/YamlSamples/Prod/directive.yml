@@ -1,0 +1,9 @@
+﻿ships: lonelyVM
+username: Administrator
+password: 12345PoC
+tasks:
+  - name: list services
+    module: service.list-services
+  - name: run script
+    module: command.powershell-script
+    args: path=d:\temp\script.ps1

@@ -1,0 +1,8 @@
+﻿---
+- name: lonelyVM
+  hosts:
+    - 192.168.40.228
+---
+- name: myvirt
+  hosts:
+    - 172.21.21.30
